@@ -10,5 +10,8 @@ public class EmployeeTest {
         
         Manager mgr = new Manager(102, "John Smith", "333-333-333", 120_345.27, "Blablabla");
         mgr.toString();
+        
+        
+        
     }   
 }
