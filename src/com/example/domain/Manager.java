@@ -14,6 +14,6 @@ public class Manager extends Employee {
     
     @Override
     public String toString() {
-        return super.toString() + "Depatment name: " + this.deptName;
+        return super.toString() + "\nDepatment name: " + this.deptName;
     }
 }

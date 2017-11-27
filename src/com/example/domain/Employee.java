@@ -51,8 +51,8 @@ public class Employee {
     @Override
     public String toString() {
         return "ID: " + this.empID + 
-                "Name: " + this.name + 
-                "Ssn: " + this.ssn +  
-                "Salary: " + NumberFormat.getCurrencyInstance().format((double) getSalary()) ;
+                "\nName: " + this.name + 
+                "\nSsn: " + this.ssn +  
+                "\nSalary: " + NumberFormat.getCurrencyInstance().format((double) getSalary()) ;
     }
 }
