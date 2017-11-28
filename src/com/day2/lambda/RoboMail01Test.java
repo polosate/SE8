@@ -10,8 +10,8 @@ public class RoboMail01Test {
         Predicate<Employee> hasEmail
             = p -> !p.getEmail().equals("");
 
-        RoboMail01 robo = new RoboMail01();
-        robo.mail(people, hasEmail);
+        RoboMail01 robo01 = new RoboMail01();
+        robo01.mail(people, hasEmail);
 
     }
 

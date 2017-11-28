@@ -80,6 +80,14 @@ public class Employee {
         return this.email;
     }
 
+    public double getSalary() {
+        return this.salary;
+    }
+
+    public int getAge() {
+        return this.age;
+    }
+
     private Employee(Employee.Builder builder) {
         this.fName = builder.fName;
         this.lName = builder.lName;
@@ -107,6 +115,7 @@ public class Employee {
                 .setFName("Jane")
                 .setLName("Oster")
                 .setAge(35)
+                .setSalary(150_000.00)
                 .setPhone("111-222-333")
                 .build()
         );
@@ -134,6 +143,7 @@ public class Employee {
                 .setFName("Kevin")
                 .setLName("Black")
                 .setAge(54)
+                .setSalary(250_000.00)
                 .setEmail("kevin@black.com")
                 .build()
         );
