@@ -1,6 +1,6 @@
-package com.example.domain;
+package com.day1.employee.domain;
 
-import com.example.business.EmployeeStockPlan;
+import com.day1.employee.business.EmployeeStockPlan;
 import java.text.NumberFormat;
 
 public class Employee {

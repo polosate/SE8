@@ -1,4 +1,4 @@
-package com.singleton;
+package com.day1.singleton;
 
 public class Main {
 

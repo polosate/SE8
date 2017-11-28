@@ -1,7 +1,8 @@
-package com.example;
+package com.day1.employee;
 
-import com.example.business.EmployeeStockPlan;
-import com.example.domain.*;
+import com.day1.employee.domain.Manager;
+import com.day1.employee.domain.Employee;
+import com.day1.employee.business.EmployeeStockPlan;
 
 public class EmployeeTest {
 

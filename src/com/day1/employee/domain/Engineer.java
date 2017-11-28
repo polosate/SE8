@@ -1,4 +1,4 @@
-package com.example.domain;
+package com.day1.employee.domain;
 
 public class Engineer extends Employee {
 

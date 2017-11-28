@@ -1,8 +1,8 @@
-package com.example.business;
+package com.day1.employee.business;
 
-import com.example.domain.Employee;
-import com.example.domain.Director;
-import com.example.domain.Manager;
+import com.day1.employee.domain.Employee;
+import com.day1.employee.domain.Director;
+import com.day1.employee.domain.Manager;
 
 public class EmployeeStockPlan {    
     public static int grantStock(Employee e) {
