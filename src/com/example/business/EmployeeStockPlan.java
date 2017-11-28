@@ -4,8 +4,7 @@ import com.example.domain.Employee;
 import com.example.domain.Director;
 import com.example.domain.Manager;
 
-public class EmployeeStockPlan {
-    
+public class EmployeeStockPlan {    
     public static int grantStock(Employee e) {
         if (e instanceof Director) {
            return 1000;

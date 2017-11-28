@@ -1,9 +1,10 @@
 package com.example.domain;
 
-import java.text.NumberFormat;
 import com.example.business.EmployeeStockPlan;
+import java.text.NumberFormat;
 
 public class Employee {
+
     private final int empID;
     private String name;
     private final String ssn;
@@ -15,44 +16,55 @@ public class Employee {
         this.ssn = ssn;
         this.salary = salary;
     }
-    
+
     public int getEmpID() {
         return this.empID;
     }
-    
+
     public String getName() {
         return this.name;
     }
-    
+
     public void setName(String name) {
-        if (name != null && !name.equals("")) {            
-            this.name = name; 
+        if (name != null && !name.equals("")) {
+            this.name = name;
         }
     }
-    
+
     public String getSsn() {
         return this.ssn;
-    }    
-  
+    }
+
     public double getSalary() {
         return this.salary;
     }
-    
+
     public void raiseSalary(double increase) {
         if (increase > 0) {
             this.salary += increase;
-        }        
+        }
     }
-    
+
     public int grantStock() {
         return EmployeeStockPlan.grantStock(this);
     }
-    
+
     @Override
     public String toString() {
-        return "ID: " + this.empID + 
-                "\nName: " + this.name + 
-                "\nSsn: " + this.ssn +  
-                "\nSalary: " + NumberFormat.getCurrencyInstance().format((double) getSalary()) ;
+        return "Employee type: " + this.getClass().getSimpleName()
+            + "\nID: " + this.empID
+            + "\nName: " + this.name
+            + "\nSsn: " + this.ssn
+            + "\nSalary: " + NumberFormat.getCurrencyInstance().format((double) getSalary());
+    }
+
+    public static void printEmployee(Employee e) {
+        System.out.println(e);
+    }
+
+    public static void printEmployee(Employee e, EmployeeStockPlan stock) {
+        printEmployee(e);
+        System.out.println("Stock Options: " + stock.grantStock(e));
+
     }
 }
