@@ -1,4 +1,4 @@
-package com.day3.lambdaOperations;
+package com.day3.lambda.lambdaOperations;
 
 /**
  *

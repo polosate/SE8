@@ -6,12 +6,14 @@ public class Customer {
     private String lname;
     private Account[] accounts;
     private int numberOfAccounts;
+    private Branch branch;
 
-    public Customer(String fname, String lname) {
+    public Customer(String fname, String lname, Branch b) {
         this.fname = fname;
         this.lname = lname;
         this.accounts = new Account[10];
         this.numberOfAccounts = 0;
+        this.branch = b;
     }
 
     public String getFname() {
