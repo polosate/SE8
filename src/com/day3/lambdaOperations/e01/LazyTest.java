@@ -1,5 +1,6 @@
-package com.day3.lambdaOperations.e02;
+package com.day3.lambdaOperations.e01;
 
+import com.day3.lambdaOperations.e02.*;
 import java.util.List;
 import java.util.Optional;
 import java.util.function.Consumer;
