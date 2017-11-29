@@ -1,4 +1,4 @@
-package com.day3.lambdaOperations.e01;
+package com.day3.lambdaOperations;
 
 import com.day3.lambdaOperations.e02.*;
 import java.util.List;

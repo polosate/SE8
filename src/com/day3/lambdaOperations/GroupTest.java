@@ -1,4 +1,4 @@
-package com.day3.lambdaOperations.e01;
+package com.day3.lambdaOperations;
 
 import java.util.List;
 import java.util.Map;
