@@ -1,32 +1,28 @@
 package com.day2.abstractBanking;
 
-public class SavingsAccount extends Account{
-    private final double overDraftLimit;
+public class SavingsAccount extends Account {
 
-    public SavingsAccount(double balance, double overDraft) {
+    public SavingsAccount(double balance) {
         super(balance);
-        this.overDraftLimit = overDraft;
     }
 
     @Override
     public boolean withdraw(double amount) {
-        if (amount > this.getBalance()) {
+        if (amount > super.balance) {
             return false;
         } else {
-            
+            super.balance -= amount;
             return true;
         }
-
-
     }
 
+    @Override
     public String getDescription() {
-        return "Saving account" + super.getDescription();
+        return "Saving account";
     }
 
     @Override
     public String toString() {
         return this.getDescription();
     }
-
 }
